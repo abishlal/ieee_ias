@@ -1,0 +1,116 @@
+<div class="App-header">
+  <video id="bg-video" loop autoPlay muted>
+    <source src='../../assets/video.mp4' type="video/mp4" />
+  </video>
+
+  <div class="typewriter">
+
+    <h1>St. Joseph's College Of Engineering</h1>
+  </div>
+  <div class="typewriterr">
+    <h1>IEEE Student Branch Chapter</h1>
+  </div>
+</div>
+<div class="ABmain container" id="about">
+  <div class="abRow row">
+    <div class="abContent col-sm-6">
+      <div class="abInnerBox">
+        <div class="abHead">
+          <h1>About US</h1>
+        </div>
+        <div class="abBox">
+          <p>
+            Institute of Electrical and Electronics Engineers is a
+            non-profit professional association headquartered in the United
+            States that is dedicated to advancing technological innovation
+            and excellence. Founded in the year 2002 under Madras Section
+            Region 10, IEEE SJCE SBC is the student-run chapter of this
+            global network that aims to extend IEEE’s outreach to students
+            and faculty at an individual level.
+          </p><br />
+          <p>
+            At St.Joseph’s college of engineering the IEEE Student Branch
+            was officially approved and inaugurated in the year 2002 with a
+            grand induction program. From 2002 to 2014 the Student Branch
+            chapter had organized and participated in various events. In the
+            year 2014 we applied and started 14 technical societies and 2
+            affinity groups. Since then, the student branch started to
+            conduct many events under the various societies and affinity
+            groups like workshops, guest lectures, Industrial Visit, NGO,
+            technical and non-technical events. As of now the student branch
+            has around 80 student members among various societies. The
+            Student members actively participated in many national and
+            international events across countries.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="abImg col-sm-6">
+      <img class="zz" src='../../assets/zz.jpg' alt="" />
+    </div>
+  </div>
+</div>
+<div class="homeScroll">
+
+  <div class="defilee__outer">
+    <h1>Our<br />Grand Events</h1>
+    <section id="defilee" class="defilee__ctnr">
+      <div class="defilee__div defilee__div--special2">
+        <h3>Conocithon</h3>
+        <p>An International 24hour hackathon</p>
+      </div>
+      <div class="defilee__div defilee__div--special">
+        <h3>PELZINE</h3>
+        <p>Students Magazine</p>
+      </div>
+      <div class="defilee__div defilee__div--special1 first">
+        <h3>ERUDITE</h3>
+        <p>A International webinar series</p>
+      </div>
+      <div class="defilee__div defilee__div--special3">
+        <h3>CONOCITHON</h3>
+        <p>It’s not a Bug, It’s a Feature</p>
+      </div>
+      <div class="defilee__div defilee__div--special4">
+        <h3>WOMANSERA 21</h3>
+        <p>An International WIE Symposium</p>
+      </div>
+      <div class="defilee__div defilee__div--special1 ">
+        <h3>SHE LEADS</h3>
+        <p>International webinar series</p>
+      </div>
+      <div class="defilee__div">
+        <h3>ENVIZAAGE</h3>
+        <p>A Symposium for School Students</p>
+      </div>
+      <div class="defilee__div defilee__div--text">
+        <h2>Stay Tuned!! New Events are on the way</h2>
+      </div>
+      <div class="defilee__div defilee__div--special3">
+        <h3>I-ROBOTIKA</h3>
+        <p>A six day live Workshop</p>
+      </div>
+      <div class="defilee__div defilee__div--special1">
+        <h3>SHE LEADS</h3>
+        <p>International webinar series</p>
+      </div>
+
+    </section>
+  </div>
+  <span class="cursor">
+    <span class="cursor-move-inner">
+      <span class="cursor-inner"></span>
+    </span>
+    <span class="cursor-move-outer">
+      <span class="cursor-outer"></span>
+    </span>
+  </span>
+</div>
+<div class="container slider">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+    (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="100%">
+    </div>
+  </ngx-slick-carousel>
+</div>

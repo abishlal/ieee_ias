@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-sm-2">
+        <div class="menu">
+            <div class="title">EVENTS</div>
+            <ul class="nav">
+                <li><a routerLink="/events22/2022">2022</a></li><br>
+                <li><a routerLink="/events21/2021">2021</a></li><br>
+                <li><a routerLink="/events20/2020">2020</a></li>
+                <li><a routerLink="/events19/2019">2019</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="Eventdetails col-sm-10">
+        <div class="events container" *ngFor="let data of events">
+            <div class="wrap row" *ngIf="year == data.year" >
+                <img class="product-img col-sm-6" src={{data.posterurl}} />
+                <div class="product-info col-sm-6">
+                    <div class="product-text">
+                        <h1>{{data.title}}</h1>
+                        <h2>IEEE Industrial Application Society</h2>
+                        <h2>{{data.startDate}}</h2>
+                        <p>{{data.description.substring(0,150)}} .....</p>
+                    </div>
+                    <div class="product-price-btn">
+
+                        <button class="custom-btn btn-6" routerLink="/events/{{data.year}}/{{data.id}}"><span>Read More</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

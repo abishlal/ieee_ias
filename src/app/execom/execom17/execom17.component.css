@@ -1,0 +1,121 @@
+
+/* Style 9
+   ----------------------------- */
+   .nine h1 {
+    text-align:center; font-size:40px; text-transform:uppercase; color:#eee; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+    padding: 10px;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#eee; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
+  
+  /* ------- Helper Styles -------------*/
+  
+  .nine {
+    position: relative;
+    width: 70%;
+
+    padding: 2em;
+    margin: 1.5em auto;
+  }
+  
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nine h1{
+    font-size: 25px;
+  }
+}
+
+  
+
+.contain .welcome {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+
+.contain {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-top: 10%;
+  transform: translate(-50%,-50%); /*隐藏作用：如果没有用transform方式进行居中显示，则width：100%会向右侧延申，左侧为空*/
+  width: 100%;
+}
+
+.welcome {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+
+  position: relative;
+  animation: text 5s infinite;
+}
+
+.muzile {
+  font-size: 30px;
+  color: #70a1ff;
+}
+
+@keyframes text {
+  0%{
+      color: #000;
+      margin-bottom: -40px;
+  }
+
+  30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+  }
+
+  85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+  }
+}
+
+
+/* table for excom*/
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+th, td {
+  padding: 20px;
+  color: #eee;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+}
+tr:hover {
+  background-color:rgba(255, 255, 255, 0.2);
+}

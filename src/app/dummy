@@ -1,0 +1,8 @@
+#212121 dark
+ box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+
+ @media only screen and (max-width: 600px) {
+  .nine h1{
+    font-size: 25px;
+  }
+}

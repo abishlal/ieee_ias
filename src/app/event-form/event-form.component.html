@@ -1,0 +1,76 @@
+<div class="row background">
+    <div class="body">
+        <div class="card-body">
+            <div class="card-title text-center">
+                <h1>Event Details Form</h1>
+            </div>
+            <div class="card-text">
+                <form [formGroup]="register_form" >
+
+                    <div class="form-group">
+                        <input type="text" class="input" placeholder="Title of the Event" formControlName="title">
+                    </div>
+
+                    <div class="alert  alert-danger" *ngIf="!register_form.controls['title'].valid && register_form.controls['title'].touched">
+                        Titel of the event is required
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="input" placeholder="Type of the Event" formControlName="eventType">
+                    </div>
+
+                    <div class="alert  alert-danger" *ngIf="!register_form.controls['eventType'].valid && register_form.controls['eventType'].touched" >
+                       Type of the Event is required
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Event Start date</label>
+                        <input type="date" formControlName="startDate" value="date" pattern="\d{4}-\d{2}-\d{2}"  class="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Event End date</label>
+                        <input type="date"formControlName="endDate" value="date" class="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select class="dropdown" formControlName="year">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="input" placeholder="Total number of participants" name="participants" formControlName="participant">
+                    </div>
+                    <div class="alert  alert-danger" *ngIf="!register_form.controls['participant'].valid && register_form.controls['participant'].touched" >
+                        Number of participant is required.
+                    </div>
+                    <div class="form-group radio">
+                        <label for="radio">Mode of the event: </label>
+                        <input type="radio" formControlName="mode" value="Online" name="passport">Online
+                        <input type="radio" formControlName="mode" value="Offline" name="passport">Offline
+                    </div>
+                    <div class="form-group">
+                        <textarea name="description" formControlName="description" cols="75" rows="8" placeholder="Description of the Event"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label for="signature">Upload the Poster </label>
+                        <input type="file" class="file"  (change)="poster($event)"><br>
+                        <button (click)="uploadpo()">Upload</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="signature">Upload the Screenshot</label>
+                        <input type="file" class="file"  (change)="Screenshot($event)">
+                        <button (click)="uploadss()">Upload</button>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" (click)="register()" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.background {
+    background-color: #212121;
+   
+}
+
+h1 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.card-body{
+    padding: 40px;
+    padding-right: 65px;
+    background-color: rgba(11, 11, 11, 0.363);
+    box-shadow: 1.5em 1em 2em -1em rgb(0, 0, 0); 
+}
+.body{
+    padding-top: 20px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.input{
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.file{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+label {
+    font-size: 25px;
+    padding-right: 30px;
+    color: white;
+}
+.dropdown{
+    padding: 5px;
+    font-size: 20px;
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+}
+.dob{
+    padding: 5px;
+    font-size: 20px;
+    width: 15%;
+    margin: 10px;
+    border-radius: 5px;
+}
+.radio{
+    margin: 0px;
+    color: white;
+}
+.form-group{
+    padding: 10px;
+}
+.button{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    cursor: pointer;
+}
+.alert{
+    width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.alert-danger{
+    background-color: red;
+    color: white;
+}
+.alert-success{
+    background-color: rgb(218, 207, 246);
+    color: #000;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+.button:disabled {
+    background-color: rgb(99, 99, 248);
+    cursor: not-allowed;
+}

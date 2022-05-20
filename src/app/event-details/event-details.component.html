@@ -1,0 +1,43 @@
+<div>
+    <div class="row">
+        <div class="poster offset-sm-3 ">
+            <img class="col-sm-6" src={{data.posterurl}} alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="Eventdetails col-sm-12">
+            <div class="events container" >
+                <div class="wrap row"  >
+                    <img class="product-img col-sm-6" src=''/>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h1>{{data.title}}</h1>
+                            <h2>IEEE Industrial Application Society</h2>
+                            <h2>{{data.startDate}}</h2>
+                            <p>{{data.description}}</p>
+                            </div>
+                    </div>
+                    <div class="product-footer">
+                        <tr>
+                            <td><h2>Conducted date : </h2></td>
+                            <td><h2><i>{{data.startDate}}</i><i *ngIf="data.endDate"> to {{data.endDate}}</i></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Total no.of.Participants : </h2></td>
+                            <td><h2><i>{{data.participant}}</i></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Mode of the Event :</h2></td>
+                            <td><h2><i>{{data.mode}}</i></h2></td>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="poster offset-sm-3 ">
+            <img class="col-sm-6" src={{data.screenurl}} alt="">
+        </div>
+    </div>
+</div>

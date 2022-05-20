@@ -1,0 +1,384 @@
+.ABmain {
+    background-color: black;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+  }
+  .abHead {
+    text-align: center;
+  }
+  .abContent {
+
+    background-image: radial-gradient(#212121 20%, transparent 20%),
+      radial-gradient(#383838 20%, transparent 20%);
+    background-color: #0a0101;
+    background-position: 0 0, 5px 5px;
+    background-size: 10px 10px;
+    border: 10px solid;
+    border-color: rgb(179, 132, 74);
+    margin: 0px 0px 0px 0px;
+    opacity: .9;
+  }
+  .abInnerBox {
+    background-color: rgb(39, 38, 38);
+    opacity: 1;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .abInnerBox{
+      margin-left: 0px;
+      margin-right: -40px;
+    }
+  }
+  .abHead{
+      color: white;
+  }
+  .abBox p{
+      color: white;
+      text-align: justify;
+      padding: 10px;
+  }
+  .abImg img {
+    width: 100%;
+    
+  }
+
+  /*scroll */
+  
+  .homeScroll {
+    font-family: "Special Elite", Georgia, serif;
+    background: #212121;
+  }
+  .homeScroll a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0.75vw solid;
+  }
+  .homeScroll p {
+    margin: 0;
+    text-align: center;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 600;
+    color: black;
+  }
+  .homeScroll h1 {
+    margin: 0;
+    font-size: calc(7vw + 20px);
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #eee;
+  }
+  
+  .homeScroll h2 {
+    font-size: 2vw;
+    color: #eee;
+    padding: 8px;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .defilee__main {
+    position: relative;
+    margin: 0 auto;
+  }
+  .defilee__outer {
+    width: 100%;
+    height: 75vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    perspective: 0.5px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+  }
+  
+  .defilee__ctnr {
+    transform-style: preserve-3d;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .defilee__div {
+    position: relative;
+    transform: translateZ(-0.1px) scale(1.4) translateX(30px) translateY(5vh);
+    box-shadow: 0.1em .8em 1em -1em #d6d1e0;
+  }
+  .defilee__div:not(.defilee__div--text) {
+    width: 25vw;
+    margin: 0 5vw;
+    background: white;
+    padding: 0.75vw;
+    border-radius: 4px;
+    box-shadow:20px 20px 30px rgba(0, 0, 0,.9);
+  }
+  .defilee__div--text {
+    margin: 0 0 0 10vw;
+    transform: translateZ(-0.25px) scale(1.4) translateX(60px) translateY(-5vh);
+    animation: zoom infinite 1s;
+  }
+  
+  .defilee__div--special {
+    transform: translateZ(-0.2px) scale(1.4) translateX(30px) translateY(20vh);
+  }
+  .defilee__div--special1 {
+    transform: translateZ(-0.25px) scale(1.4) translateX(-0.3vw) translateY(0);
+  }
+  
+  .defilee__div--special2 {
+    transform: translateZ(-0.3px) scale(1.5) translateX(-0.5vw) translateY(-5vh);
+  }
+  .defilee__div--special3 {
+    transform: translateZ(-0.5px) scale(1.5) translateX(-30px) translateY(-30vh);
+  }
+  .defilee__div--special4 {
+    transform: translateZ(-0.65px) scale(3) translateX(30px) translateY(-10vh);
+  }
+  .defilee__ctnr {
+    transform: translate3d(-10%, 0, 0);
+    will-change: transform;
+    animation: slide 25s 0.7s linear infinite;
+  }
+  @keyframes slide {
+    100% {
+      transform: translate3d(-60%, 0, 0);
+    }
+  }
+  .defilee__div--special1.first {
+    animation: vertical infinite 5s -2s;
+  }
+  @keyframes vertical {
+    50% {
+      transform: translateZ(-0.25px) scale(1.6) translateX(-0.3vw)
+        translateY(-5vh);
+    }
+  }
+  
+  @keyframes zoom {
+    50% {
+      transform: translateZ(-0.25px) scale(1.5) translateX(60px) translateY(-5vh);
+    }
+  }
+  
+  .homeScroll h3 {
+    width: 100%;
+    margin-bottom: 0.75vw;
+    text-align: left;
+    font-size: calc(0.6rem + 0.6vw);
+    font-weight: 400;
+    color: black;
+    
+  }
+  .homeScroll p{
+      font-weight: 200;
+  }
+  .homeScroll div:nth-child(3n + 1) > img {
+    filter: sepia(100%) hue-rotate(-83deg);
+  }
+
+
+  /*slider carosol*/
+  .slider{
+      padding: 50px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .typewriter h1{
+      font-size: 5px;
+    }
+  }
+
+
+  
+  
+  /*front home */
+  /* headin animations*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.typewriterr h1 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+
+    
+    blink-caret .5s step-end infinite ;
+
+margin: 10px;
+margin-bottom: 40px;
+    
+}
+.typewriter h1{
+  font-size: 50px;
+  padding: 10px;
+}
+.headd{
+  padding-top: -40px;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
+  10% { border-color: white}
+}
+
+
+
+#bg-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding: none;
+    z-index:-2  ;
+    background-color: rgb(0,0,0);
+    opacity: 0.7;
+
+}
+.App-header {
+
+    padding-top: 100px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(20px + 2vmin);
+    color: white;
+    text-shadow: 5px solid black;
+
+  }
+
+.button-49,
+.button-49:after {
+  width: 80px;
+  height:50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 0%, #000 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 10px #0ef6cc;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor:pointer;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fff 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typewriter h1{
+    font-size: 30px;
+  }
+  .typewriterr h1{
+    font-size: 20px;
+  }
+}
+
